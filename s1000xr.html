@@ -37,6 +37,13 @@ th, td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
 </style>
 <br>
 <body class="w3-content" style="max-width:1200px">
@@ -54,7 +61,7 @@ tr:nth-child(even) {
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" > ADVENTURE <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>All</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>All</a>
       <a href="#" class="w3-bar-item w3-button">Enduro</a>
 	  <a href="#" class="w3-bar-item w3-button">OffRoad</a>
     </div>
@@ -154,7 +161,7 @@ tr:nth-child(even) {
 			<th>S1000XR</th>
 		</tr>
 		<tr>
-			<td>CAPACITY</td>
+			<td>ENGINE</td>
 			<td>999cc</td>
 			<td>Liquid/Oil Cooled</td>
 		</tr>
@@ -176,7 +183,7 @@ tr:nth-child(even) {
 		<tr>
 			<td>TRANSMISSION</td>
 			<td>6 Speed</td>
-			<td></td>
+			<td>Chain Drive</td>
 		</tr>
 		<tr>
 			<td>BORE X STROKE</td>
@@ -186,7 +193,12 @@ tr:nth-child(even) {
 		<tr>
 			<td>TYPE</td>
 			<td>Inline 4</td>
-			<td></td>
+			<td>DOHC</td>
+		</tr>
+		<tr>
+			<td>FUEL TANK</td>
+			<td>20L</td>
+			<td>17kmpl</td>
 		</tr>
 		<tr>
 			<td>FRONT SUSPENSION</td>
@@ -199,16 +211,6 @@ tr:nth-child(even) {
 			<td>5.9 inches</td>
 		</tr>
 		<tr>
-			<td>FUEL TANK</td>
-			<td>20L</td>
-			<td>17kmpl</td>
-		</tr>
-		<tr>
-			<td>FRAME</td>
-			<td>Aluminium composite bridge</td>
-			<td></td>
-		</tr>
-		<tr>
 			<td>FRONT BRAKE</td>
 			<td>320mm disc</td>
 			<td>Four Piston Calipers</td>
@@ -219,9 +221,19 @@ tr:nth-child(even) {
 			<td>Single Piston caliper</td>
 		</tr>
 		<tr>
+			<td>ABS</td>
+			<td><i class="fa fa-check"></i></td>
+			<td></td>
+		</tr>
+		<tr>
 			<td>TIRE</td>
 			<td>120/70 ZR17</td>
 			<td>190/55 ZR17</td>
+		</tr>
+		<tr>
+			<td>FRAME</td>
+			<td>Aluminium composite bridge</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>WHEELBASE</td>
