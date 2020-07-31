@@ -7,59 +7,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
-
-th, td {
-  text-align: Left;
-  padding: 9px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.fa-check {
-  color: green;
-}
-
-.fa-remove {
-  color: red;
-}
 </style>
-<br>
 <body class="w3-content" style="max-width:1200px">
 
-			<!-- Sidebar/menu -->
+<!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>Ride Zone</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 	<a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="sport.html" class="w3-bar-item w3-button">Sport</a>
+    <a onclick="myAccFunc()" href="sport.html" class="w3-button w3-block w3-white w3-left-align" >SPORT <i class="fa fa-caret-down"></i></a>
     <a href="#" class="w3-bar-item w3-button">Naked</a>
-    <a onclick="myAccFunc()" href="adventure.html" class="w3-button w3-block w3-white w3-left-align" > ADVENTURE <i class="fa fa-caret-down"></i></a>
+    <a href="adventure.html" class="w3-bar-item w3-button"> Adventure</a>
     <a href="#" class="w3-bar-item w3-button">Commuter</a>
     <a href="#" class="w3-bar-item w3-button">Dirt</a>
   </div>
@@ -68,190 +32,92 @@ tr:nth-child(even) {
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
 </nav>
 
-			<!-- Top menu on small screens -->
+<!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-15 w3-wide"><a href="index.html" style="text-decoration:none; color:white;">Ride Zone</a></div>
+  <div class="w3-bar-item w3-padding-15 w3-wide"><a href="index.html" style="text-decoration:none">Ride Zone</a></div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-20 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
-			<!-- Overlay effect when opening sidebar on small screens -->
+<!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-			<!-- !PAGE CONTENT! -->
+<!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px">
 
-			<!-- Push down content on small screens -->
+  <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:45px"></div>
   
-			<!-- Top header -->
+  <!-- Top header -->
   <header class="w3-container w3-large">
-    <p class="w3-left">ADVENTURE</p>
+    <p class="w3-left">SUPER SPORT</p>
     <p class="w3-right">
       <i class="fa fa-search"></i>
     </p>
   </header>
-			<!-- Image header -->
-	<div class="w3-display-container w3-container">
-		<img src="images/yamaha/tracer900gt.3.jpg" style="width:100%">
-		<div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-			<h1 class="w3-jumbo w3-hide-small">YAMAHA</h1>
-			<h1 class="w3-hide-large w3-hide-medium">Tracer 900 GT</h1>
-			<h1 class="w3-hide-small">Tracer 900 GT</h1>
-		</div>
-	</div>
-	<br>
-			<!-- CAROUSEL -->
-	<div id="demo" class="carousel slide" data-ride="carousel">
 
-			<!-- Indicators -->
-	<ul class="carousel-indicators">
-		<li data-target="#demo" data-slide-to="0" class="active"></li>
-		<li data-target="#demo" data-slide-to="1"></li>
-		<li data-target="#demo" data-slide-to="2"></li>
-		<li data-target="#demo" data-slide-to="3"></li>
-		<li data-target="#demo" data-slide-to="4"></li>
-		<li data-target="#demo" data-slide-to="5"></li>
-		<li data-target="#demo" data-slide-to="6"></li>
-		<li data-target="#demo" data-slide-to="7"></li>
-	</ul>
-		  
-			<!-- The slideshow -->
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="images/yamaha/tracer900gt.2.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.4.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.5.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.3.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.8.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.7.jpg" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-			<img src="images/yamaha/tracer900gt.6.jpg" width="1100" height="500">
-		</div>
-	</div>
-		  
-			<!-- Left and right controls -->
-	<a class="carousel-control-prev" href="#demo" data-slide="prev">
-		<span class="carousel-control-prev-icon"></span>
-	</a>
-	<a class="carousel-control-next" href="#demo" data-slide="next">
-		<span class="carousel-control-next-icon"></span>
-	</a>
-	</div>
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="images/honda/cbr1000rr-r/4.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">HONDA CBR</h1>
+      <h2 class="w3-hide-large w3-hide-medium">CBR 1000 RR-R</h2>
+      <h1 class="w3-hide-small">1000 RR-R</h1>
+      <p><a href="cbr1000rr-r.html" class="w3-button w3-black w3-padding-large w3-large">Check Out</a></p>
+    </div>
+  </div>
 
-	<table>
-		<tr>
-			<th>MODEL</th>
-			<th>YAMAHA</th>
-			<th>TRACER 900 GT</th>
-		</tr>
-		<tr>
-			<td>ENGINE</td>
-			<td>847 cc</td>
-			<td>Liquid Cooled</td>
-		</tr>
-		<tr>
-			<td>POWER</td>
-			<td>115 PS</td>
-			<td>@ 10,000 rpm</td>
-		</tr>
-		<tr>
-			<td>TORQUE</td>
-	 		<td>87.5 Nm</td>
-			<td>@ 8,500 rpm</td>
-		</tr>
-		<tr>
-			<td>COMPRESSION</td>
-			<td>11.5:1</td>
-			<td></td> 
-		</tr>
-		<tr>
-			<td>TRANSMISSION</td>
-			<td>6 Speed</td>
-			<td>CONSTANT MESH</td>
-		</tr>
-		<tr>
-			<td>BORE X STROKE</td>
-			<td>78mm</td>
-			<td>59.1mm</td>
-		</tr>
-		<tr>
-			<td>TYPE</td>
-			<td>3-Cylinder</td>
-			<td>DOHC</td>
-		</tr>
-		<tr>
-			<td>FUEL TANK</td>
-			<td>18L</td>
-			<td>18.1 kmpl</td>
-		</tr>
-		<tr>
-			<td>FRONT SUSPENSION</td>
-			<td>41mm Inverted</td>
-			<td>Fully Adjustable</td>
-		</tr>
-		<tr>
-			<td>REAR SUSPENSION</td>
-			<td>Single shock</td>
-			<td>Rebound Damping/Preload Adjustment</td>
-		</tr>
-		<tr>
-			<td>FRONT BRAKE</td>
-			<td>298mm disc</td>
-			<td>Two Piston Calipers</td>
-		</tr>
-		<tr>
-			<td>REAR BRAKE</td>
-			<td>245mm disc</td>
-			<td>Single Piston Caliper</td>
-		</tr>
-		<tr>
-			<td>ABS</td>
-			<td><i class="fa fa-check"></i></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>TIRE</td>
-			<td>120/70ZR17M/C </td>
-			<td>180/55ZR17M/C </td>
-		</tr>
-		<tr>
-			<td>FRAME</td>
-			<td>Diamond</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>WHEELBASE</td>
-			<td>1500mm</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>SEAT HEIGHT</td>
-			<td>850mm</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>KERB WEIGHT</td>
-			<td>214kg</td>
-			<td></td>
-		</tr>
-	</table>
-		
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
 
-			<!-- Subscribe section -->
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <a href="cbr1000rr-r.html"><img src="images/honda/thumbnail/cbr1000rr-r.jpg" style="width:100%"></a>
+        <p>CBR 1000RR-R<br><b>HONDA</b></p>
+      </div>
+      <div class="w3-container">
+        <a href="#"><img src="images/empty.jpg" style="width:100%"></a>
+        <p>Coming<br><b>Soon</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+		<a href="r1m.html"><img src="images/yamaha/thumbnail/R1M.jpg" style="width:100%"></a>
+        <p>R1M<br><b>YAMAHA</b></p>
+      </div>
+      <div class="w3-container">
+        <a href="#"><img src="images/empty.jpg" style="width:100%"></a>
+        <p>Coming<br><b>Soon</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <a href="#"><img src="images/empty.jpg" style="width:100%"></a>
+        <p>Coming<br><b>Soon</b></p>
+      </div>
+      <div class="w3-container">
+          <a href="#"><img src="images/empty.jpg" style="width:100%"></a>
+        <p>Coming<br><b>Soon</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <a href="#"><img src="images/empty.jpg" style="width:100%"></a>
+        <p>Coming<br><b>Soon</b></p>
+      </div>
+      <div class="w3-container">
+        <a href="#"><img src="images/empty.jpg" style="width:100%"></a>
+        <p>Coming<br><b>Soon</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
     <h1>Subscribe</h1>
     <p>To get special offers and VIP treatment:</p>
@@ -259,7 +125,7 @@ tr:nth-child(even) {
     <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
   </div>
   
-			<!-- Footer -->
+  <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
@@ -308,10 +174,10 @@ tr:nth-child(even) {
 
   <div class="w3-black w3-center w3-padding-24">Powered by <a href=# title="Universal Luna" target="_blank" class="w3-hover-opacity">RideZone</a></div>
 
-			<!-- End page content -->
+  <!-- End page content -->
 </div>
 
-			<!-- Newsletter Modal -->
+<!-- Newsletter Modal -->
 <div id="newsletter" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
     <div class="w3-container w3-white w3-center">
@@ -349,7 +215,6 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
-
 </script>
 
 </body>
